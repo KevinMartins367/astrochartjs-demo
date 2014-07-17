@@ -8,6 +8,8 @@ astrochartjs
 
 Javascript library for drawing hindu astrological charts.
 
+SVG <svg id="chart" />
+
 Usage
 -----
 

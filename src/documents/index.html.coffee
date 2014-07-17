@@ -10,37 +10,70 @@ p ->
  a href: "https://github.com/erajasekar/astrochartjs", "astrochartjs"
  text " javascript library for drawing hindu astrological charts."
 
-p ->
- text "Lets use following chart data for all demo's"
+div ".row", ->
 
-pre ->
- code ".lang-javascript", """
+ div ".col-md-6", ->
+  p ->
+   text "Javascript code"
 
-var chartData = {
-  1: ["Su", "Ke"],
-  3: ["Ju"],
-  6: ["Ma", "Asc"],
-  7: ["Mo", "Sa", "Ra"],
-  11: ["Ve"],
-  12: ["Me"]
-};
-      """
-p ->
- text "For the following chart options"
-
-pre ->
- code ".lang-javascript", """
+  pre ->
+   code ".lang-javascript", """
 
 var options = {
-  title: ["Rasi", "14/04/2014 07:00AM", "Erode, Tamil Nadu, India"],
-  showHouseNumbers: true,
-  width: 600,
-  height: 400,
-  styleSheet: "http://rawgit.com/erajasekar/astrochartjs/master/dist/themes/default.css"
-};
-      """
-p ->
- text "It will generate below chart"
+        'title': ['Rasi', '14/04/2014 07:00AM', 'Erode, Tamil Nadu, India'],
+        'showHouseNumbers' : true,
+        'width': 540,
+        'height': 400,
+        'styleSheet':"http://rawgit.com/erajasekar/astrochartjs/master/dist/themes/astrosoft.css"
+    };
 
-div ->
- svg "#chart", ""
+var astroChart = new AstroChart("#chart1");
+astroChart.draw({
+    1: ["Su", "Ke"],
+    3: ["Ju"],
+    6: ["Ma", "Asc"],
+    7: ["Mo", "Sa", "Ra"],
+    11: ["Ve"],
+    12: ["Me"]
+}, options);
+
+      """
+ div ".col-md-6", ->
+  p ->
+   text "Generated chart"
+
+  div ->
+   svg "#chart1", ""
+
+div ".row", ->
+
+ div ".col-md-6", ->
+
+  pre ->
+   code ".lang-javascript", """
+
+var options = {
+        'title': ['Rasi', '14/04/2014 07:00AM', 'Erode, Tamil Nadu, India'],
+        'showHouseNumbers' : true,
+        'width': 540,
+        'height': 400,
+        'styleSheet':"http://rawgit.com/erajasekar/astrochartjs/master/dist/themes/default.css"
+    };
+
+var astroChart = new AstroChart("#chart2");
+astroChart.draw({
+    1: ["Su", "Ke"],
+    3: ["Ju"],
+    6: ["Ma", "Asc"],
+    7: ["Mo", "Sa", "Ra"],
+    11: ["Ve"],
+    12: ["Me"]
+}, options);
+
+      """
+ div ".col-md-6", ->
+
+  div ->
+   svg "#chart2", ""
+
+
