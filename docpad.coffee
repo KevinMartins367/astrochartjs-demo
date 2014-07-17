@@ -2,6 +2,13 @@
 # It is simply a CoffeeScript Object which is parsed by CSON
 docpadConfig = {
 
+	# Environments
+    environments:
+        development:
+            templateData:
+                site:
+                    url: 'http://localhost:9778'
+
 	# =================================
 	# Template Data
 	# These are variables that will be accessible via our templates
@@ -12,7 +19,7 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://website.com"
+			url: "http://erajasekar.github.io/astrochartjs-demo"
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [

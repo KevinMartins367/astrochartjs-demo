@@ -21,7 +21,7 @@ html ->
     ie "lt IE 9", ->
       script async: yes, src: "http://html5shim.googlecode.com/svn/trunk/html5.js"
 
-    text @getBlock('styles').add(@site.styles).toHTML()
+    text @getBlock('styles').add(@getUrl(@site.styles)).toHTML()
 
     body ->
     
@@ -32,4 +32,4 @@ html ->
       div class: "container", ->
         p class: "text-muted credit", "&copy #{@site.author or 'Tadeusz Łazurski'}"
     
-    text @getBlock('scripts').add(@site.scripts).toHTML()
+    text @getBlock('scripts').add(@getUrl(@site.scripts)).toHTML()
