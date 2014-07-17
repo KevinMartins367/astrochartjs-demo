@@ -41,7 +41,7 @@ docpadConfig = {
 				"""
 
 			# The website author's name
-			author: "Your Name"
+			author: "Rajasekar Elango"
 
 			# The website author's email
 			email: "your@email.com"
