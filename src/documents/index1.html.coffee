@@ -38,7 +38,8 @@ astroChart.draw({
 p ->
  text "Generated chart"
 
-svg "#chart", ""
+svg "#chart1", ""
+svg "#chart2", ""
 
 p ->
   text "more text"

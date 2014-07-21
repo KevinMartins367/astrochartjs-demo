@@ -40,9 +40,7 @@ It generates below chart
 
 <svg id="chart1" width="540" height="400"/>
 
-Chart generated with using astrosoft
 
-<svg id="chart2" width="540" height="400"/>
 
 
 

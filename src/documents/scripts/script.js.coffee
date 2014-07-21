@@ -6,7 +6,7 @@ options =
   ]
   width: 540
   height: 400
-  styleSheet:"http://rawgit.com/erajasekar/astrochartjs/master/dist/themes/default.css"
+  #styleSheet:"http://rawgit.com/erajasekar/astrochartjs/master/dist/themes/astrosoft.css"
 
 chartData =
   1: [
@@ -26,12 +26,14 @@ chartData =
   11: ["Ve"]
   12: ["Me"]
 
+
 astroChart = new AstroChart("#chart1")
 astroChart.draw chartData, options
 
-options.styleSheet = "http://rawgit.com/erajasekar/astrochartjs/master/dist/themes/astrosoft.css"
 
-astroChart = new AstroChart("#chart2")
-astroChart.draw chartData, options
+#options.styleSheet = "http://rawgit.com/erajasekar/astrochartjs/master/dist/themes/default.css"
+
+#astroChart = new AstroChart("#chart2")
+#astroChart.draw chartData, options
 
 
