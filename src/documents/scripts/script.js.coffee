@@ -6,7 +6,7 @@ options =
   ]
   width: 540
   height: 400
-  #styleSheet:"http://rawgit.com/erajasekar/astrochartjs/master/dist/themes/astrosoft.css"
+  styleSheet:"http://rawgit.com/erajasekar/astrochartjs/master/dist/themes/default.css"
 
 chartData =
   1: [
@@ -32,8 +32,30 @@ astroChart.draw chartData, options
 
 
 #options.styleSheet = "http://rawgit.com/erajasekar/astrochartjs/master/dist/themes/default.css"
+options.showHouseNumbers = true;
+astroChart = new AstroChart("#chart2")
+astroChart.draw chartData, options
 
-#astroChart = new AstroChart("#chart2")
-#astroChart.draw chartData, options
+options.startHouseNumbersFrom = 6
+astroChart = new AstroChart("#chart3")
+astroChart.draw chartData, options
 
+chartData =
+  1: [
+    "Su"
+    "Ke"
+    "Ju"
+    "Ma"
+    "Asc"
+    "Mo"
+    "Ve"
+    "Me"
+    "Sa"
+  ]
+
+options.showHouseNumbers = false;
+options.width=600
+options.title = ["Bhava", "DOB 10/11/1990"]
+astroChart = new AstroChart("#chart4")
+astroChart.draw chartData, options
 
