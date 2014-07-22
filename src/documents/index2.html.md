@@ -86,4 +86,14 @@ will generate below chart
 
 <svg id="chart3" width="540" height="400"/>
 
+### Chart showing planets alignment in house
+
+Just to show that how planets will be aligned with in a house if lot of them are in first house. Let's say we have following chart data.
+
+```javascript
+var chartData = {1: ["Su", "Ke", "Ju", "Ma", "Asc", "Mo", "Ve", "Me", "Sa"]};
+
+```
+The planets will be aligned in same first house like in this chart.
+
 <svg id="chart4" width="600" height="400"/>

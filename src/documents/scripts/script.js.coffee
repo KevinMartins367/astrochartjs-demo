@@ -55,7 +55,6 @@ chartData =
 
 options.showHouseNumbers = false;
 options.width=600
-options.title = ["Bhava", "DOB 10/11/1990"]
 astroChart = new AstroChart("#chart4")
 astroChart.draw chartData, options
 
