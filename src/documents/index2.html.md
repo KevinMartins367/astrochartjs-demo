@@ -97,3 +97,6 @@ var chartData = {1: ["Su", "Ke", "Ju", "Ma", "Asc", "Mo", "Ve", "Me", "Sa"]};
 The planets will be aligned in same first house like in this chart.
 
 <svg id="chart4" width="600" height="400"/>
+
+![image](/images/astrosoft-theme-eg.png)
+![image](/images/custom-theme-eg.png)

@@ -31,7 +31,6 @@ astroChart = new AstroChart("#chart1")
 astroChart.draw chartData, options
 
 
-#options.styleSheet = "http://rawgit.com/erajasekar/astrochartjs/master/dist/themes/default.css"
 options.showHouseNumbers = true;
 astroChart = new AstroChart("#chart2")
 astroChart.draw chartData, options

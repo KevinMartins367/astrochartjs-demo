@@ -1,0 +1,67 @@
+<svg id="chart" width="540" height="400">
+
+    <desc>Created with Snap</desc>
+    <defs></defs>
+    <style type="text/css">
+    <![CDATA[
+        rect.house {
+        stroke: #FF00FF;
+        fill: #F3EFE3;
+        }
+        rect.chart {
+        fill: #F3EFE3;
+        }
+        text.house {
+        font-family : Consolas;
+        font-weight: bold;
+        font-size: 16px;
+        fill : #4867D6;
+        }
+        text.title {
+        font-family: Helvetica, Arial, san-serif;
+        font-weight: 700;
+        font-size : 16px;
+        fill : #248F40;
+        text-anchor: middle;
+        }
+        text.retrograde {
+        fill:#04819E;
+        }
+        #Asc {
+        fill:#FF1E00;
+        }
+        #Mo {
+        fill:#A61300
+        }
+
+        ]]>
+    </style>
+    <rect x="0" y="0" width="540" height="400" class="chart"></rect>
+    <text x="270" y="200" class="title">
+        <tspan>Rasi</tspan>
+        <tspan dy="1.2em" x="270">11/04/2014 07:00AM</tspan>
+        <tspan dy="1.2em" x="270">Erode, Tamil Nadu, India</tspan>
+    </text>
+    <rect x="136.25" y="0" width="131.25" height="96.25" class="house"></rect>
+    <text x="142.8125" y="24.0625" class="house" id="Su">Su</text>
+    <text x="230.3125" y="88.22916666666667" class="house" id="Ke">Ke</text>
+    <rect x="272.5" y="0" width="131.25" height="96.25" class="house"></rect>
+    <rect x="408.75" y="0" width="131.25" height="96.25" class="house"></rect>
+    <text x="459.0625" y="56.145833333333336" class="house" id="Ju">Ju</text>
+    <rect x="408.75" y="101.25" width="131.25" height="96.25" class="house"></rect>
+    <rect x="408.75" y="202.5" width="131.25" height="96.25" class="house"></rect>
+    <rect x="408.75" y="303.75" width="131.25" height="96.25" class="house"></rect>
+    <text x="415.3125" y="327.8125" class="house" id="Ma">Ma</text>
+    <text x="502.8125" y="391.9791666666667" class="house" id="Asc">Asc</text>
+    <rect x="272.5" y="303.75" width="131.25" height="96.25" class="house"></rect>
+    <text x="279.0625" y="359.8958333333333" class="house" id="Mo">Mo</text>
+    <text x="366.5625" y="327.8125" class="house" id="Sa">Sa</text>
+    <text x="366.5625" y="391.9791666666667" class="house" id="Ra">Ra</text>
+    <rect x="136.25" y="303.75" width="131.25" height="96.25" class="house"></rect>
+    <rect x="0" y="303.75" width="131.25" height="96.25" class="house"></rect>
+    <rect x="0" y="202.5" width="131.25" height="96.25" class="house"></rect>
+    <rect x="0" y="101.25" width="131.25" height="96.25" class="house"></rect>
+    <text x="50.3125" y="157.39583333333334" class="house" id="Ve">Ve</text>
+    <rect x="0" y="0" width="131.25" height="96.25" class="house"></rect>
+    <text x="50.3125" y="56.145833333333336" class="house" id="Me">Me</text>
+</svg>
