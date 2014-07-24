@@ -1,0 +1,143 @@
+```
+title: Astrochartjs Demo
+layout: default
+```
+
+astrochartjs demo
+------------------
+
+This the demo of [astrochartjs](https://github.com/erajasekar/astrochartjs) javascript library for drawing hindu astrological charts.
+
+### Simple Chart Example
+
+Javascript code to draw simple chart with default options and default style sheet.
+
+```javascript
+
+var options = {
+  title: ["Rasi", "14/04/2014 07:00AM", "Erode, Tamil Nadu, India"],
+  width: 540,
+  height: 400,
+  styleSheet: "http://rawgit.com/erajasekar/astrochartjs/master/dist/themes/default.css"
+};
+
+var chartData = { 1: ["Su", "Ke"],3: ["Ju"], 6: ["Ma", "Asc"], 7: ["Mo", "Sa", "Ra"], 11: ["Ve"], 12: ["Me"]};
+
+var astroChart = new AstroChart("#chart2");
+astroChart.draw(chartData, options);
+
+```
+
+It generates below chart
+
+<svg id="chart1" width="540" height="400"/>
+
+### Chart Showing House Numbers
+
+Setting `showHouseNumbers` property to `true` will show house numbers in each house.
+ 
+This Javascript example code 
+
+```javascript
+...
+options.showHouseNumbers=true
+var astroChart = new AstroChart("#chart2");
+astroChart.draw({ 1: ["Su", "Ke"],3: ["Ju"], 6: ["Ma", "Asc"], 7: ["Mo", "Sa", "Ra"], 11: ["Ve"], 12: ["Me"]}, options);
+
+```
+will generate below chart
+
+<svg id="chart2" width="540" height="400"/>
+
+### Chart showing House Numbers From Ascendant
+
+Setting `startHouseNumbersFrom` to between 1 and 12 will begin numbering houses from  given value. This is useful
+to number houses from `Ascendant`. For eg: if Ascendant is Kanya. You can set ```startHouseNumbersFrom=6```.
+
+This Javascript example code 
+
+```javascript
+...
+options.startHouseNumbersFrom=6
+var astroChart = new AstroChart("#chart2");
+astroChart.draw({ 1: ["Su", "Ke"],3: ["Ju"], 6: ["Ma", "Asc"], 7: ["Mo", "Sa", "Ra"], 11: ["Ve"], 12: ["Me"]}, options);
+
+```
+will generate below chart
+
+<svg id="chart3" width="540" height="400"/>
+
+### Chart showing planets alignment in house
+
+Just to show that how planets will be aligned with in a house if lot of them are in same house. Let's say we have several planets in first house
+
+```javascript
+...
+options.startHouseNumbersFrom=6
+var astroChart = new AstroChart("#chart2");
+astroChart.draw({1: ["Su", "Ke", "Ju", "Ma", "Asc", "Mo", "Ve", "Me", "Sa"]}, options);
+
+```
+
+The planets will be aligned in same first house like below
+
+<svg id="chart4" width="540" height="400"/>
+
+### Customizing Style with external css.
+
+The look and feel of chart can be customized using css and specifying path to css in `styleSheet` option like
+
+```javascript
+options.styleSheet = "http://rawgit.com/erajasekar/astrochartjs/master/dist/themes/astrosoft.css"
+...
+astroChart.draw(chartData, options);
+```
+
+This will make look like [Astrosoft](https://github.com/erajasekar/Astrosoft) below
+
+<img src="http://erajasekar.github.io/astrochartjs-demo/images/astrosoft-theme-eg.png" />
+
+### Customizing Style with inline css.
+
+The look and feel of chart can also be customized inline stylesheet using `style` child element of `svg` element like
+
+```java
+<svg id="chart" width='540' height='400'>
+    <style type="text/css">
+        <![CDATA[rect.house {
+            stroke: #FF00FF;
+            fill: #F3EFE3;
+        }
+        rect.chart {
+            fill: #F3EFE3;
+        }
+        text.house {
+            font-family : Consolas;
+            font-weight: bold;
+            font-size: 16px;
+            fill : #4867D6;
+        }
+        text.title {
+            font-family: Helvetica, Arial, san-serif;
+            font-weight: 700;
+            font-size : 16px;
+            fill : #248F40;
+            text-anchor: middle;
+        }
+        text.retrograde {
+            fill:#04819E;
+        }
+        #Asc {
+            fill:#FF1E00;
+        }
+        #Mo {
+            fill:#A61300
+        }
+        ]]>
+    </style>
+</svg>
+```
+
+This will make chart look like below
+
+<img src="http://erajasekar.github.io/astrochartjs-demo/images/custom-theme-eg.png"/>

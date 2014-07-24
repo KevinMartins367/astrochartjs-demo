@@ -53,7 +53,6 @@ chartData =
   ]
 
 options.showHouseNumbers = false;
-options.width=600
 astroChart = new AstroChart("#chart4")
 astroChart.draw chartData, options
 
