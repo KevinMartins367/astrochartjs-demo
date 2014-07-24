@@ -23,13 +23,11 @@ html ->
 
     text @getBlock('styles').add(@getUrl(@site.styles)).toHTML()
 
-    body ->
-    
-    div class: "container", ->
-      text @content
+  div class: "container", ->
+    text @content
 
-    footer id: "footer", ->
-      div class: "container", ->
-        p class: "text-muted credit", "&copy #{@site.author or 'Tadeusz Łazurski'}"
-    
-    text @getBlock('scripts').add(@getUrl(@site.scripts)).toHTML()
+  footer id: "footer", ->
+    div class: "container", ->
+      p class: "text-muted credit", "&copy #{@site.author or 'Tadeusz Łazurski'}"
+
+  text @getBlock('scripts').add(@getUrl(@site.scripts)).toHTML()

@@ -1,10 +1,12 @@
-```
+---
 title: Astrochartjs Demo
 layout: default
-```
+---
 
-astrochartjs demo
-------------------
+<div class="page-header">
+    <h1>astrochartjs demo</h1>
+</div>
+
 
 This the demo of [astrochartjs](https://github.com/erajasekar/astrochartjs) javascript library for drawing hindu astrological charts.
 
